@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
         showSlide(currentSlide - 1);
     }
 
-    // Event listeners for buttons
     document.getElementById('prevBtn').addEventListener('click', function () {
         prevSlide();
     });
