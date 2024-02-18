@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () {
             slides[currentSlide].classList.remove('slide-animating');
             showSlide(currentSlide + 1);
-        }, 500); // Adjust the duration of animation (in milliseconds)
+        }, 500);
     }
 
     function prevSlide() {
