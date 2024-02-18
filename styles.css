@@ -1,0 +1,81 @@
+body {
+    overflow: scroll;
+    background-image: linear-gradient(rgba(123, 123, 207, 0.5), rgba(167, 167, 93, 0.5)),
+        url("Images/Image4.jpg");
+}
+
+p {
+    color: white;
+    filter: drop-shadow(30px 10px 10px orange);
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+footer {
+    text-align: center;
+    padding-top: 300px;
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+    font: italic small-caps bold 16px/2 cursive;
+}
+
+.slider {
+    position: relative;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 350px;
+    justify-content: center;
+    border-radius: 1px;
+}
+
+.slides img {
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slides img.active {
+    opacity: 1;
+}
+
+button {
+    position: absolute;
+    top: 110%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    border-color: blue;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+@keyframes scrollAnimation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.slide-animating {
+    animation: 3s ease-in 1s infinite reverse both running slidein;
+    animation-direction: alternate;
+}
